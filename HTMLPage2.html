@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Тест по Counter-Strike 2</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #1a1a1a;
+                color: #e0e0e0;
+            }
+
+            h1 {
+                color: #e53935;
+                text-align: center;
+                margin-bottom: 30px;
+                text-shadow: 1px 1px 2px #000;
+            }
+
+            .question {
+                background-color: #2d2d2d;
+                padding: 20px;
+                margin-bottom: 25px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+                border-left: 4px solid #e53935;
+            }
+
+                .question img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                    margin: 10px 0;
+                    border: 2px solid #444;
+                }
+
+            .options {
+                margin-left: 15px;
+            }
+
+                .options label {
+                    display: block;
+                    margin: 10px 0;
+                    padding: 8px;
+                    border-radius: 4px;
+                    transition: background-color 0.2s;
+                }
+
+                    .options label:hover {
+                        background-color: #3d3d3d;
+                    }
+
+            button {
+                background-color: #e53935;
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                font-size: 18px;
+                border-radius: 5px;
+                cursor: pointer;
+                display: block;
+                margin: 30px auto;
+                transition: background-color 0.3s;
+            }
+
+                button:hover {
+                    background-color: #c62828;
+                    transform: scale(1.02);
+                }
+
+            #result {
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                margin-top: 25px;
+                padding: 15px;
+                border-radius: 5px;
+                background-color: #2d2d2d;
+            }
+
+            .correct {
+                color: #4caf50;
+            }
+
+            .wrong {
+                color: #f44336;
+            }
+
+            .average {
+                color: #ff9800;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Тест на знание Counter-Strike 2</h1>
+
+        <div class="question">
+            <p>1. Какое главное визуальное улучшение в CS2 по сравнению с CS:GO?</p>
+            <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_616x353.jpg" alt="CS2 Visuals">
+            <div class="options">
+                <label><input type="radio" name="q1" value="a"> Улучшенные текстуры оружия</label>
+                <label><input type="radio" name="q1" value="b"> Полностью переработанные модели персонажей</label>
+                <label><input type="radio" name="q1" value="c"> Система динамического освещения и дыма</label>
+                <label><input type="radio" name="q1" value="d"> Добавление погодных эффектов</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>2. На каком движке работает CS2?</p>
+            <img src="https://avatars.mds.yandex.net/i?id=9f5a80fd89f9e50b3870f27e7ee257c2_l-5341701-images-thumbs&n=13" alt="Source 2 Engine">
+            <div class="options">
+                <label><input type="radio" name="q2" value="a"> Source</label>
+                <label><input type="radio" name="q2" value="b"> Source 2</label>
+                <label><input type="radio" name="q2" value="c"> Unreal Engine 5</label>
+                <label><input type="radio" name="q2" value="d"> Unity</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>3. Как называется новая система ранкинга в CS2?</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/2031737642153391531/BE96747E7260C1B9AF54A90933762146801BF02A/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Premier Mode">
+            <div class="options">
+                <label><input type="radio" name="q3" value="a"> Competitive</label>
+                <label><input type="radio" name="q3" value="b"> Global Offensive</label>
+                <label><input type="radio" name="q3" value="c"> Premier Mode</label>
+                <label><input type="radio" name="q3" value="d"> Ranked 2.0</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>4. Какой из этих режимов был добавлен в CS2?</p>
+            <img src="https://avatars.mds.yandex.net/i?id=b173d87f146752f0d92955ad05e327ef_l-5222188-images-thumbs&n=13" alt="Game Modes">
+            <div class="options">
+                <label><input type="radio" name="q4" value="a"> Danger Zone</label>
+                <label><input type="radio" name="q4" value="b"> Wingman</label>
+                <label><input type="radio" name="q4" value="c"> Arms Race</label>
+                <label><input type="radio" name="q4" value="d"> Все эти режимы были и в CS:GO</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>5. Как изменилась механика дыма в CS2?</p>
+            <img src="https://avatars.mds.yandex.net/i?id=c2f38e70a5e24754daf98de4461092fd_l-8474988-images-thumbs&n=13" alt="Smoke Mechanics">
+            <div class="options">
+                <label><input type="radio" name="q5" value="a"> Дым теперь статичен как в CS:GO</label>
+                <label><input type="radio" name="q5" value="b"> Дым реагирует на освещение и выстрелы</label>
+                <label><input type="radio" name="q5" value="c"> Добавлены цветные дымы</label>
+                <label><input type="radio" name="q5" value="d"> Дым теперь рассеивается быстрее</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>6. Какая карта получила наибольшие изменения в CS2?</p>
+            <img src="https://pic.rutubelist.ru/video/71/20/7120622e355e6ede2a442fc56e1f741e.jpg" alt="Overpass Map">
+            <div class="options">
+                <label><input type="radio" name="q6" value="a"> Dust II</label>
+                <label><input type="radio" name="q6" value="b"> Mirage</label>
+                <label><input type="radio" name="q6" value="c"> Overpass</label>
+                <label><input type="radio" name="q6" value="d"> Inferno</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>7. Что произошло со скинами из CS:GO в CS2?</p>
+            <img src="https://steamuserimages-a.akamaihd.net/ugc/14173210404370671/895FAF111B71D043D008E845F9FB9D2AB4715A35/?imw=512&amp;imh=409&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true" alt="Weapon Skins">
+            <div class="options">
+                <label><input type="radio" name="q7" value="a"> Они были удалены</label>
+                <label><input type="radio" name="q7" value="b"> Они остались без изменений</label>
+                <label><input type="radio" name="q7" value="c"> Они были перенесены с улучшенной визуализацией</label>
+                <label><input type="radio" name="q7" value="d"> Их можно использовать только в оффлайн-режиме</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>8. Как изменилась физика гранат в CS2?</p>
+            <img src="https://avatars.mds.yandex.net/i?id=e90c53a8ce3b4b269b49d4a4fcc22259_l-12520451-images-thumbs&n=13" alt="Grenade Physics">
+            <div class="options">
+                <label><input type="radio" name="q8" value="a"> Осталась прежней</label>
+                <label><input type="radio" name="q8" value="b"> Добавлена реалистичная траектория отскоков</label>
+                <label><input type="radio" name="q8" value="c"> Гранаты теперь могут взрываться в воздухе</label>
+                <label><input type="radio" name="q8" value="d"> Увеличена скорость полета гранат</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>9. Что из этого НОВОЕ в CS2?</p>
+            <img src="https://avatars.mds.yandex.net/i?id=80ed77a042a920d54b669f500ca6a712_l-10330559-images-thumbs&n=13" alt="CS2 UI">
+            <div class="options">
+                <label><input type="radio" name="q9" value="a"> Меню загрузки</label>
+                <label><input type="radio" name="q9" value="b"> Табло с информацией о матче</label>
+                <label><input type="radio" name="q9" value="c"> Система подбора игроков</label>
+                <label><input type="radio" name="q9" value="d"> Все перечисленное</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>10. Когда был анонсирован Counter-Strike 2?</p>
+            <img src="https://avatars.mds.yandex.net/i?id=65ea560eef3386bef4a1723dafb7aa5b_l-10697425-images-thumbs&n=13" alt="CS2 Announcement">
+            <div class="options">
+                <label><input type="radio" name="q10" value="a"> 22 марта 2023</label>
+                <label><input type="radio" name="q10" value="b"> 1 апреля 2023</label>
+                <label><input type="radio" name="q10" value="c"> 15 июня 2023</label>
+                <label><input type="radio" name="q10" value="d"> 27 сентября 2023</label>
+            </div>
+        </div>
+
+        <button onclick="checkAnswers()">Проверить ответы</button>
+
+        <div id="result"></div>
+
+        <script>
+        function checkAnswers() {
+            const correctAnswers = {
+                q1: "c", // Система динамического освещения и дыма
+                q2: "b", // Source 2
+                q3: "c", // Premier Mode
+                q4: "d", // Все эти режимы были и в CS:GO
+                q5: "b", // Дым реагирует на освещение и выстрелы
+                q6: "c", // Overpass
+                q7: "c", // Они были перенесены с улучшенной визуализацией
+                q8: "b", // Добавлена реалистичная траектория отскоков
+                q9: "d", // Все перечисленное
+                q10: "a" // 22 марта 2023
+            };
+
+            let score = 0;
+
+            // Проверка ответов
+            for (let i = 1; i <= 10; i++) {
+                const questionName = "q" + i;
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                if (selectedOption && selectedOption.value === correctAnswers[questionName]) {
+                    score++;
+                }
+            }
+
+            // Вывод результата
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `Ваш результат: ${score} из 10`;
+
+            if (score === 10) {
+                resultElement.className = "correct";
+                resultElement.textContent += " 🏆 Идеально! Вы настоящий эксперт по CS2!";
+            } else if (score >= 7) {
+                resultElement.className = "correct";
+                resultElement.textContent += " 👍 Отличный результат! Хорошее знание игры!";
+            } else if (score >= 4) {
+                resultElement.className = "average";
+                resultElement.textContent += " 🤔 Неплохо, но есть куда расти!";
+            } else {
+                resultElement.className = "wrong";
+                resultElement.textContent += " 😕 Стоит больше играть в CS2!";
+            }
+        }
+        </script>
+    </body>
+</html>
+<p>
+    Переходи по ссылке
+</p>
+</body>
+</html>
